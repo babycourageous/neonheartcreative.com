@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main tw="flex flex-col items-center justify-center h-screen">
-        <Image src="/nh-logo-bw.png" alt="" width={250} height={250} />
+        <Image src="/logo.png" alt="" width={296} height={241} />
         <p tw="text-yellow-500">Website Coming Soon</p>
       </main>
 

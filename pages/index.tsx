@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </header>
       <main tw="">
-        <section tw="container mt-6 mx-auto px-4">
+        <section tw="max-w-3xl sm:flex sm:flex-row-reverse mt-6 mx-auto px-4">
           <p tw="text-3xl font-extralight">Hi! I'm Jess. </p>
           <p>
             I am a self taught interior designer based in Atlanta, GA that most
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section tw="container mt-6 mx-auto px-4">
+        <section tw="max-w-3xl mt-6 mx-auto px-4">
           <h2 tw="text-3xl font-extralight">My Process</h2>
           <dd>
             <dt tw="font-bold mt-2">Intake</dt>
@@ -82,7 +82,7 @@ export default function Home() {
           </dd>
         </section>
 
-        <section tw="container mt-6 mx-auto px-4">
+        <section tw="max-w-3xl mt-6 mx-auto px-4">
           <h2 tw="text-3xl font-extralight">Pricing</h2>
 
           <div tw="min-w-full space-y-2">
@@ -99,7 +99,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer tw="container flex items-center justify-center mt-6 mx-auto px-4 py-4">
+      <footer tw="max-w-3xl flex items-center justify-center mt-6 mx-auto px-4 py-4">
         <div tw="p-1">
           <svg
             tw="w-6 h-6"

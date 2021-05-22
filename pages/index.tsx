@@ -82,7 +82,7 @@ export default function Home() {
         <section tw="max-w-3xl mt-6 mx-auto px-4">
           <h2 tw="text-3xl font-extralight">Pricing</h2>
 
-          <div tw="min-w-full space-y-2">
+          <div tw="min-w-full mt-2 space-y-2">
             {pricing.map((item) => (
               <div tw="flex justify-between">
                 <div>

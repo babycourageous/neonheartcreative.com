@@ -32,10 +32,9 @@ export default function Home() {
           <div tw="sm:ml-6">
             <p tw="text-3xl font-extralight">Hi! I'm Jess. </p>
             <p>
-              I am a self taught interior designer based in Atlanta, GA that
-              most would say has been designing in some shape or form my whole
-              life. I tackle everything from office spaces to home decor to DIY
-              house projects to special events.
+              I'm an interior designer based in Atlanta, GA. I tackle everything
+              from office spaces to home decor to DIY house projects to special
+              events.
             </p>
             <p tw="mt-2">
               My approach to design is to pay respect to the original

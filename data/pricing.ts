@@ -2,7 +2,7 @@ export const pricing = [
   {
     label: '45 minute introductory meeting',
     description:
-      "..this is how it all begins. Let's get to know each other and your needs and decide together if Neon Heart is the right fit.",
+      "This is how it all begins. Let's get to know each other and your needs and decide together if Neon Heart is the right fit.",
     price: 'FREE',
   },
   {
@@ -19,19 +19,19 @@ export const pricing = [
   {
     label: '1 room design',
     description:
-      'including digital mood board, spreadsheets of articles recommended',
+      'Including digital mood board, spreadsheets of articles recommended',
     price: '$500',
   },
   {
     label: 'Kitchen design',
     description:
-      'including digital mood board, spreadsheets of articles recommended',
+      'Including digital mood board, spreadsheets of articles recommended',
     price: '$1500',
   },
   {
     label: 'Room Sketch-Up',
     description:
-      'my take on what your space could look like from a photo you send me, including 1 revision',
+      'My take on what your space could look like from a photo you send me, including 1 revision',
     price: '$50',
   },
   {

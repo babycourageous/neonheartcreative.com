@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header tw="w-full">
+      <header tw="w-full py-4">
         <div tw="relative h-20">
           <Image
             src="/assets/images/nh-logo.png"
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </header>
       <main tw="">
-        <section tw="max-w-3xl sm:flex sm:flex-row-reverse mt-6 mx-auto px-4">
+        <section tw="max-w-3xl sm:flex sm:flex-row-reverse mt-6 mx-auto px-4 py-8">
           <div tw="sm:ml-6">
             <p tw="text-3xl font-extralight">Hi! I'm Jess. </p>
             <p>
@@ -45,30 +45,30 @@ export default function Home() {
           </div>
         </section>
 
-        <section tw="max-w-3xl mt-6 mx-auto px-4">
+        <section tw="max-w-3xl mt-6 mx-auto px-4 py-8">
           <h2 tw="text-3xl font-extralight">My Process</h2>
-          <dd>
-            <dt tw="font-bold mt-2">Intake</dt>
+          <dd tw="mt-2">
+            <dt tw="font-bold">Intake</dt>
             <dd>
               We begin with a 45-minute consultation. During this time, we will
               define your design goals and review the design process. This time
               may include site visits or a virtual meeting.
             </dd>
-            <dt tw="font-bold mt-2">Design Development</dt>
+            <dt tw="font-bold mt-5">Design Development</dt>
             <dd>
               We will collaborate on a Pinterest board to define the style of
               your design. I'll present colors and pictures of a variety of
               designs. Your job is to identify the palettes and images that most
               identify with your vision.
             </dd>
-            <dt tw="font-bold mt-2">Delivery</dt>
+            <dt tw="font-bold mt-5">Delivery</dt>
             <dd>
               This is the exciting phase as your design is curated. You will
               receive your design in : 1 PDF Mood Board (allowing 2
               revisions/changes) per room, 1 spreadsheet with options shown in
               PDF + 1-2 variations in color/price per room.
             </dd>
-            <dt tw="font-bold mt-2">Project Close</dt>
+            <dt tw="font-bold mt-5">Project Close</dt>
             <dd>
               We will end your design with a tour of your final project. The
               review will entail a 45 minutes walk-through to ensure that all
@@ -79,7 +79,7 @@ export default function Home() {
           </dd>
         </section>
 
-        <section tw="max-w-3xl mt-6 mx-auto px-4">
+        <section tw="max-w-3xl mt-6 mx-auto px-4 py-8">
           <h2 tw="text-3xl font-extralight">Pricing</h2>
 
           <div tw="min-w-full mt-2 space-y-2">

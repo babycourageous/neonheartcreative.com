@@ -49,8 +49,8 @@ export default function Home() {
         </section>
 
         <section tw="max-w-3xl mt-6 mx-auto px-4 py-8">
-          <h2 tw="text-3xl font-extralight">My Process</h2>
-          <dd tw="mt-2">
+          <h2 tw="text-3xl font-extralight">The Process</h2>
+          <dl tw="mt-2">
             <dt tw="font-bold">Intake</dt>
             <dd>
               We begin with a 45-minute consultation. During this time, we will
@@ -79,11 +79,11 @@ export default function Home() {
               come to fruition. Once you sign off, you are ready to live and
               entertain in the house of your dreams!
             </dd>
-          </dd>
+          </dl>
         </section>
 
         <section tw="max-w-3xl mt-6 mx-auto px-4 py-8">
-          <h2 tw="text-3xl font-extralight">Pricing</h2>
+          <h2 tw="text-3xl font-extralight">The Pricing</h2>
 
           <div tw="min-w-full mt-2 space-y-2">
             {pricing.map((item) => (

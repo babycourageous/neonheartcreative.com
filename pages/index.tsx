@@ -33,11 +33,14 @@ export default function Home() {
             <p>
               I am a self taught interior designer based in Atlanta, GA that
               most would say has been designing in some shape or form my whole
-              life. I tackle everything from office spaces to home Decor to DIY
+              life. I tackle everything from office spaces to home decor to DIY
               house projects to special events.
             </p>
             <p tw="mt-2">
-              I know how to take your budget and bring your vision to life.
+              My approach to design is to pay respect to the original
+              architecture and year your space was built with how we pick our
+              design and decor - Pair that with things you truly love, and we've
+              found the heart of your home
             </p>
           </div>
           <div tw="flex items-center justify-center w-full mt-4 sm:mt-0">

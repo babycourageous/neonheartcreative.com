@@ -23,7 +23,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "twin.d.ts"
+    "twin.d.ts",
+    "global.d.ts"
   ],
   "exclude": [
     "node_modules"

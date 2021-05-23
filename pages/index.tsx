@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import { pricing } from '../data/pricing'
+import SubscribeForm from '../components/subscribe-form'
 
 export default function Home() {
   return (
@@ -95,6 +96,20 @@ export default function Home() {
                 <div tw="ml-6">{item.price}</div>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section tw="max-w-3xl mt-6 mx-auto px-4 py-8">
+          <div tw="relative h-20">
+            <Image
+              src="/assets/images/newsletter-heading.png"
+              alt=""
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+          <div tw="mt-4">
+            <SubscribeForm />
           </div>
         </section>
       </main>

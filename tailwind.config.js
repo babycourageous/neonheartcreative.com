@@ -2,6 +2,10 @@ module.exports = {
   purge: [],
   darkMode: false,
   theme: {
+    fontFamily: {
+      sans: ['Open Sans', 'sans-serif'],
+      alt: ['Roboto', 'sans-serif'],
+    },
     extend: {
       colors: {
         primary: '#E4E844',

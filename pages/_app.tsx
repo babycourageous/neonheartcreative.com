@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Global
         styles={css`
           body {
-            ${tw`text-gray-800`}
+            ${tw`font-sans text-gray-800`}
           }
         `}
       />

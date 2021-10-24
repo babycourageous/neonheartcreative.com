@@ -99,9 +99,10 @@ export default function Home() {
             ))}
           </div>
         </section>
+
         <section tw="max-w-3xl mt-6 mx-auto px-4 py-8">
           <h2 tw="text-3xl font-extralight">Event Planning Packages</h2>
-          <p tw="text-sm text-gray-700">Includes a shared Pinterest board for overall feel/theme of your event, digital mood boards for final selection, spreadsheets of articles/food/entertainment recommended, budgeting, and help ordering. If needed on site day of the event, an additional day rate will be applied.</p>
+          <p tw="mt-2 text-sm text-gray-700">Includes a shared Pinterest board for overall feel/theme of your event, digital mood boards for final selection, spreadsheets of articles/food/entertainment recommended, budgeting, and help ordering. If needed on-site for the day of the event, an additional day rate will be applied.</p>
 
           <div tw="min-w-full mt-2 space-y-2">
             

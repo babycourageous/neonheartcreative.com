@@ -8,31 +8,31 @@ export const pricing = [
   {
     label: '30 minute Zoom Consultation',
     description: 'For quickie design/decor consults',
-    price: '$40',
+    price: '$50',
   },
   {
     label: '1 hour in person Consultation',
     description:
       'For longer consultation. When you need someone to come in with opinions you can use. Lots of them.',
-    price: '$100',
+    price: '$125',
   },
   {
     label: '1 room design',
     description:
       'Including digital mood board, spreadsheets of articles recommended',
-    price: '$500',
+    price: '$550',
   },
   {
     label: 'Kitchen design',
     description:
       'Including digital mood board, spreadsheets of articles recommended',
-    price: '$1500',
+    price: '$600-1500',
   },
   {
     label: 'Room Sketch-Up',
     description:
       'My take on what your space could look like from a photo you send me, including 1 revision',
-    price: '$50',
+    price: '$100',
   },
   {
     label: 'Hourly rate',
@@ -42,6 +42,6 @@ export const pricing = [
   {
     label: 'Freelance Day Rate',
     description: '8 hours shopping/assembly for Clients',
-    price: '$375',
+    price: '$400',
   },
 ]

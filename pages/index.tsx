@@ -29,10 +29,10 @@ export default function Home() {
       </header>
       <main tw="">
         <section
-          tw="max-w-3xl sm:flex sm:flex-row-reverse mt-6 mx-auto px-4 py-8"
+          tw="max-w-3xl sm:flex sm:flex-row mt-6 mx-auto px-4 py-8"
           aria-label="About Neonheart Creative"
         >
-          <div tw="sm:ml-6">
+          <div>
             <p tw="text-3xl font-extralight">Hi! I'm Jess. </p>
             <p>
               I'm an interior designer based in Atlanta, GA. I tackle everything
@@ -47,7 +47,7 @@ export default function Home() {
             </p>
           </div>
           <div tw="flex items-center justify-center w-full mt-4 sm:mt-0">
-            <img src="/assets/images/hello-there.png" alt="" />
+            <img src="/assets/images/profile.png" alt="" />
           </div>
         </section>
 

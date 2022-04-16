@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 import { pricing } from '../data/pricing'
 import SubscribeForm from '../components/subscribe-form'
+import Testimonials from '../components/testimonials'
 
 export default function Home() {
   return (
@@ -89,6 +90,8 @@ export default function Home() {
             </dd>
           </dl>
         </section>
+
+        <Testimonials />
 
         <section
           tw="max-w-3xl mt-6 mx-auto px-4 py-8"

@@ -1,7 +1,4 @@
 module.exports = {
-  purge: [],
-  mode: 'jit',
-  darkMode: false,
   theme: {
     fontFamily: {
       sans: ['Open Sans', 'sans-serif'],
@@ -27,9 +24,6 @@ module.exports = {
         },
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [require('@tailwindcss/forms')],
 }

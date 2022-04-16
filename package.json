@@ -14,6 +14,7 @@
     "@emotion/styled": "^11.3.0",
     "@tailwindcss/forms": "^0.3.2",
     "blueimp-md5": "^2.18.0",
+    "keen-slider": "^6.6.7",
     "ky": "^0.25.1",
     "ky-universal": "^0.8.2",
     "next": "10.2.0",

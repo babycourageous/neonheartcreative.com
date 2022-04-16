@@ -100,7 +100,10 @@ export default function Home() {
 
           <div tw="min-w-full mt-2 space-y-2">
             {pricing.map((item) => (
-              <div key={item.label} tw="flex justify-between">
+              <div
+                key={item.label}
+                tw="flex justify-between pl-1 py-1 pr-2 odd:bg-gray-100"
+              >
                 <div>
                   <div tw="text-sm font-alt font-bold text-gray-900">
                     {item.label}

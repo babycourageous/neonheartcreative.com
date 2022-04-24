@@ -1,4 +1,3 @@
-import 'twin.macro'
 import * as React from 'react'
 import { useForm } from 'react-hook-form'
 import ky from 'ky-universal'
@@ -95,13 +94,13 @@ function SubscribeForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div tw="shadow overflow-hidden sm:rounded-md">
-        <div tw="px-4 py-5 bg-white sm:p-6">
-          <div tw="grid grid-cols-6 gap-6">
-            <div tw="col-span-6 sm:col-span-3">
+      <div className="shadow overflow-hidden sm:rounded-md">
+        <div className="px-4 py-5 bg-white sm:p-6">
+          <div className="grid grid-cols-6 gap-6">
+            <div className="col-span-6 sm:col-span-3">
               <label
                 htmlFor="firstName"
-                tw="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700"
               >
                 First name
               </label>
@@ -111,14 +110,14 @@ function SubscribeForm() {
                 {...register('firstName')}
                 id="firstName"
                 autoComplete="given-name"
-                tw="mt-1 focus:ring-yellow-400 focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                className="mt-1 focus:ring-yellow-400 focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
               />
             </div>
 
-            <div tw="col-span-6 sm:col-span-3">
+            <div className="col-span-6 sm:col-span-3">
               <label
                 htmlFor="lastName"
-                tw="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700"
               >
                 Last name
               </label>
@@ -128,14 +127,14 @@ function SubscribeForm() {
                 {...register('lastName')}
                 id="lastName"
                 autoComplete="family-name"
-                tw="mt-1 focus:ring-yellow-400 focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                className="mt-1 focus:ring-yellow-400 focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
               />
             </div>
 
-            <div tw="col-span-6">
+            <div className="col-span-6">
               <label
                 htmlFor="email"
-                tw="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700"
               >
                 Email address
               </label>
@@ -145,15 +144,15 @@ function SubscribeForm() {
                 {...register('email')}
                 id="email"
                 autoComplete="email"
-                tw="mt-1 focus:ring-yellow-400 focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                className="mt-1 focus:ring-yellow-400 focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
               />
             </div>
           </div>
         </div>
-        <div tw="px-4 py-3 bg-gray-50 text-right sm:px-6">
+        <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
           <button
             type="submit"
-            tw="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-primary-dark bg-primary hover:bg-primary-dark hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-primary-dark bg-primary hover:bg-primary-dark hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
           >
             Submit
           </button>

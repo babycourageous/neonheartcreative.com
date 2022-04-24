@@ -47,7 +47,7 @@ export default function Home() {
             </p>
           </div>
           <div tw="flex items-center justify-center w-full mt-4 sm:mt-0">
-            <img src="/assets/images/profile.png" alt="" />
+            <img src="/assets/images/hello-there.png" alt="" />
           </div>
         </section>
 

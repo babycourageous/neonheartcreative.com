@@ -53,7 +53,8 @@ function SubscribeForm() {
         value: 'Thnk you so much for signing up!',
         error: null,
       })
-    } catch (e) {
+    } catch (error) {
+      const e: any = error
       const m = await e.response.json()
       console.log({ e: m })
       switch (e.response.status) {

@@ -28,8 +28,11 @@ export default function Home() {
         </div>
       </header>
       <main tw="">
-        <section tw="max-w-3xl sm:flex sm:flex-row-reverse mt-6 mx-auto px-4 py-8">
-          <div tw="sm:ml-6">
+        <section
+          tw="max-w-3xl sm:flex sm:flex-row mt-6 mx-auto px-4 py-8"
+          aria-label="About Neonheart Creative"
+        >
+          <div>
             <p tw="text-3xl font-extralight">Hi! I'm Jess. </p>
             <p>
               I'm an interior designer based in Atlanta, GA. I tackle everything
@@ -44,12 +47,17 @@ export default function Home() {
             </p>
           </div>
           <div tw="flex items-center justify-center w-full mt-4 sm:mt-0">
-            <img src="/assets/images/hello-there.png" alt="" />
+            <img src="/assets/images/profile.png" alt="" />
           </div>
         </section>
 
-        <section tw="max-w-3xl mt-6 mx-auto px-4 py-8">
-          <h2 tw="text-3xl font-extralight">The Process</h2>
+        <section
+          tw="max-w-3xl mt-6 mx-auto px-4 py-8"
+          aria-labelledby="process-heading"
+        >
+          <h2 id="process-heading" tw="text-3xl font-extralight">
+            The Process
+          </h2>
           <dl tw="mt-2">
             <dt tw="font-alt font-bold">Intake</dt>
             <dd>
@@ -82,12 +90,20 @@ export default function Home() {
           </dl>
         </section>
 
-        <section tw="max-w-3xl mt-6 mx-auto px-4 py-8">
-          <h2 tw="text-3xl font-extralight">The Pricing</h2>
+        <section
+          tw="max-w-3xl mt-6 mx-auto px-4 py-8"
+          aria-labelledby="pricing-heading"
+        >
+          <h2 id="pricing-heading" tw="text-3xl font-extralight">
+            The Pricing
+          </h2>
 
           <div tw="min-w-full mt-2 space-y-2">
             {pricing.map((item) => (
-              <div key={item.label} tw="flex justify-between">
+              <div
+                key={item.label}
+                tw="flex justify-between pl-1 py-1 pr-2 odd:bg-gray-100"
+              >
                 <div>
                   <div tw="text-sm font-alt font-bold text-gray-900">
                     {item.label}
@@ -100,41 +116,53 @@ export default function Home() {
           </div>
         </section>
 
-        <section tw="max-w-3xl mt-6 mx-auto px-4 py-8">
-          <h2 tw="text-3xl font-extralight">Event Planning Packages</h2>
-          <p tw="mt-2 text-sm text-gray-700">Includes a shared Pinterest board for overall feel/theme of your event, digital mood boards for final selection, spreadsheets of articles/food/entertainment recommended, budgeting, and help ordering. If needed on-site for the day of the event, an additional day rate will be applied.</p>
+        <section
+          tw="max-w-3xl mt-6 mx-auto px-4 py-8"
+          aria-labelledby="event-heading"
+        >
+          <h2 id="event-heading" tw="text-3xl font-extralight">
+            Event Planning Packages
+          </h2>
+          <p tw="mt-2 text-sm text-gray-700">
+            Includes a shared Pinterest board for overall feel/theme of your
+            event, digital mood boards for final selection, spreadsheets of
+            articles/food/entertainment recommended, budgeting, and help
+            ordering. If needed on-site for the day of the event, an additional
+            day rate will be applied.
+          </p>
 
           <div tw="min-w-full mt-2 space-y-2">
-            
-              <div tw="flex justify-between">
-                <div>
-                  <div tw="text-sm font-alt font-bold text-gray-900">
-                    1-50 people
-                  </div>
+            <div tw="flex justify-between">
+              <div>
+                <div tw="text-sm font-alt font-bold text-gray-900">
+                  1-50 people
                 </div>
-                <div tw="ml-6">$500</div>
               </div>
-              <div tw="flex justify-between">
-                <div>
-                  <div tw="text-sm font-alt font-bold text-gray-900">
-                    50-100 people
-                  </div>
+              <div tw="ml-6">$500</div>
+            </div>
+            <div tw="flex justify-between">
+              <div>
+                <div tw="text-sm font-alt font-bold text-gray-900">
+                  50-100 people
                 </div>
-                <div tw="ml-6">$750</div>
               </div>
-              <div tw="flex justify-between">
-                <div>
-                  <div tw="text-sm font-alt font-bold text-gray-900">
-                    100+ people
-                  </div>
+              <div tw="ml-6">$750</div>
+            </div>
+            <div tw="flex justify-between">
+              <div>
+                <div tw="text-sm font-alt font-bold text-gray-900">
+                  100+ people
                 </div>
-                <div tw="ml-6">$1000</div>
               </div>
-
+              <div tw="ml-6">$1000</div>
+            </div>
           </div>
         </section>
 
-        <section tw="max-w-3xl mt-6 mx-auto px-4 py-8">
+        <section
+          tw="max-w-3xl mt-6 mx-auto px-4 py-8"
+          aria-label="Sign Up For The Newsletter"
+        >
           <div tw="relative h-20">
             <Image
               src="/assets/images/newsletter-heading.png"

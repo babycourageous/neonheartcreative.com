@@ -14,7 +14,7 @@ export const pricing = [
     label: '1 hour in person Consultation',
     description:
       'For longer consultation. When you need someone to come in with opinions you can use. Lots of them.',
-    price: '$125',
+    price: '$150',
   },
   {
     label: '1 room design',
@@ -29,19 +29,19 @@ export const pricing = [
     price: '$600-1500',
   },
   {
-    label: 'Room Sketch-Up',
-    description:
-      'My take on what your space could look like from a photo you send me, including 1 revision',
-    price: '$100',
-  },
-  {
     label: 'Hourly rate',
     description: '(shopping, styling, etc.)',
     price: '$75/hr',
   },
   {
     label: 'Freelance Day Rate',
-    description: '8 hours shopping/assembly for Clients',
-    price: '$400',
+    description: '8 hours shopping/assembly/styling for Clients',
+    price: '$450',
+  },
+  {
+    label: 'New Home Overview',
+    description:
+      'Consultation and detailed spreadsheet on everything you need for your new home to be move-in ready. Includes paint colors, light fixtures, hardware, and suggestions on updates you could make.',
+    price: '$500',
   },
 ]

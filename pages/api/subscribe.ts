@@ -79,8 +79,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       isEmail
     )
   } catch (e) {
-    console.log('> Validation failed', e.message)
-    res.status(403).json({ message: e.message })
+    const errorMessage = e instanceof Error ? e.message : 'unknown error'
+    console.log('> Validation failed', errorMessage)
+    res.status(403).json({ message: errorMessage })
   }
 
   if (req.method === 'POST') {

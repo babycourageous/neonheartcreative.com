@@ -1,4 +1,3 @@
-import 'twin.macro'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -17,8 +16,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header tw="w-full py-4">
-        <div tw="relative h-20">
+      <header className="w-full py-4">
+        <div className="relative h-20">
           <Image
             src="/assets/images/nh-logo.png"
             alt=""
@@ -27,59 +26,59 @@ export default function Home() {
           />
         </div>
       </header>
-      <main tw="">
+      <main className="">
         <section
-          tw="max-w-3xl sm:flex sm:flex-row mt-6 mx-auto px-4 py-8"
+          className="max-w-3xl sm:flex sm:flex-row mt-6 mx-auto px-4 py-8"
           aria-label="About Neonheart Creative"
         >
           <div>
-            <p tw="text-3xl font-extralight">Hi! I'm Jess. </p>
+            <p className="text-3xl font-extralight">Hi! I'm Jess. </p>
             <p>
               I'm an interior designer based in Atlanta, GA. I tackle everything
               from office spaces to home decor to DIY house projects to special
               events.
             </p>
-            <p tw="mt-2">
+            <p className="mt-2">
               My approach to design is to pay respect to the original
               architecture and year your space was built with how we pick our
               design and decor - Pair that with things you truly love, and we've
               found the heart of your home
             </p>
           </div>
-          <div tw="flex items-center justify-center w-full mt-4 sm:mt-0">
+          <div className="flex items-center justify-center w-full mt-4 sm:mt-0">
             <img src="/assets/images/hello-there.png" alt="" />
           </div>
         </section>
 
         <section
-          tw="max-w-3xl mt-6 mx-auto px-4 py-8"
+          className="max-w-3xl mt-6 mx-auto px-4 py-8"
           aria-labelledby="process-heading"
         >
-          <h2 id="process-heading" tw="text-3xl font-extralight">
+          <h2 id="process-heading" className="text-3xl font-extralight">
             The Process
           </h2>
-          <dl tw="mt-2">
-            <dt tw="font-alt font-bold">Intake</dt>
+          <dl className="mt-2">
+            <dt className="font-alt font-bold">Intake</dt>
             <dd>
               We begin with a 45-minute consultation. During this time, we will
               define your design goals and review the design process. This time
               may include site visits or a virtual meeting.
             </dd>
-            <dt tw="font-alt font-bold mt-5">Design Development</dt>
+            <dt className="font-alt font-bold mt-5">Design Development</dt>
             <dd>
               We will collaborate on a Pinterest board to define the style of
               your design. I'll present colors and pictures of a variety of
               designs. Your job is to identify the palettes and images that most
               identify with your vision.
             </dd>
-            <dt tw="font-alt font-bold mt-5">Delivery</dt>
+            <dt className="font-alt font-bold mt-5">Delivery</dt>
             <dd>
               This is the exciting phase as your design is curated. You will
               receive your design in : 1 PDF Mood Board (allowing 2
               revisions/changes) per room, 1 spreadsheet with options shown in
               PDF + 1-2 variations in color/price per room.
             </dd>
-            <dt tw="font-alt font-bold mt-5">Project Close</dt>
+            <dt className="font-alt font-bold mt-5">Project Close</dt>
             <dd>
               We will end your design with a tour of your final project. The
               review will entail a 45 minutes walk-through to ensure that all
@@ -91,39 +90,41 @@ export default function Home() {
         </section>
 
         <section
-          tw="max-w-3xl mt-6 mx-auto px-4 py-8"
+          className="max-w-3xl mt-6 mx-auto px-4 py-8"
           aria-labelledby="pricing-heading"
         >
-          <h2 id="pricing-heading" tw="text-3xl font-extralight">
+          <h2 id="pricing-heading" className="text-3xl font-extralight">
             The Pricing
           </h2>
 
-          <div tw="min-w-full mt-2 space-y-2">
+          <div className="min-w-full mt-2 space-y-2">
             {pricing.map((item) => (
               <div
                 key={item.label}
-                tw="flex justify-between pl-1 py-1 pr-2 odd:bg-gray-100"
+                className="flex justify-between pl-1 py-1 pr-2 odd:bg-gray-100"
               >
                 <div>
-                  <div tw="text-sm font-alt font-bold text-gray-900">
+                  <div className="text-sm font-alt font-bold text-gray-900">
                     {item.label}
                   </div>
-                  <div tw="text-sm text-gray-500">{item.description}</div>
+                  <div className="text-sm text-gray-500">
+                    {item.description}
+                  </div>
                 </div>
-                <div tw="ml-6">{item.price}</div>
+                <div className="ml-6">{item.price}</div>
               </div>
             ))}
           </div>
         </section>
 
         <section
-          tw="max-w-3xl mt-6 mx-auto px-4 py-8"
+          className="max-w-3xl mt-6 mx-auto px-4 py-8"
           aria-labelledby="event-heading"
         >
-          <h2 id="event-heading" tw="text-3xl font-extralight">
+          <h2 id="event-heading" className="text-3xl font-extralight">
             Event Planning Packages
           </h2>
-          <p tw="mt-2 text-sm text-gray-700">
+          <p className="mt-2 text-sm text-gray-700">
             Includes a shared Pinterest board for overall feel/theme of your
             event, digital mood boards for final selection, spreadsheets of
             articles/food/entertainment recommended, budgeting, and help
@@ -131,39 +132,39 @@ export default function Home() {
             day rate will be applied.
           </p>
 
-          <div tw="min-w-full mt-2 space-y-2">
-            <div tw="flex justify-between">
+          <div className="min-w-full mt-2 space-y-2">
+            <div className="flex justify-between">
               <div>
-                <div tw="text-sm font-alt font-bold text-gray-900">
+                <div className="text-sm font-alt font-bold text-gray-900">
                   1-50 people
                 </div>
               </div>
-              <div tw="ml-6">$500</div>
+              <div className="ml-6">$500</div>
             </div>
-            <div tw="flex justify-between">
+            <div className="flex justify-between">
               <div>
-                <div tw="text-sm font-alt font-bold text-gray-900">
+                <div className="text-sm font-alt font-bold text-gray-900">
                   50-100 people
                 </div>
               </div>
-              <div tw="ml-6">$750</div>
+              <div className="ml-6">$750</div>
             </div>
-            <div tw="flex justify-between">
+            <div className="flex justify-between">
               <div>
-                <div tw="text-sm font-alt font-bold text-gray-900">
+                <div className="text-sm font-alt font-bold text-gray-900">
                   100+ people
                 </div>
               </div>
-              <div tw="ml-6">$1000</div>
+              <div className="ml-6">$1000</div>
             </div>
           </div>
         </section>
 
         <section
-          tw="max-w-3xl mt-6 mx-auto px-4 py-8"
+          className="max-w-3xl mt-6 mx-auto px-4 py-8"
           aria-label="Sign Up For The Newsletter"
         >
-          <div tw="relative h-20">
+          <div className="relative h-20">
             <Image
               src="/assets/images/newsletter-heading.png"
               alt=""
@@ -171,20 +172,20 @@ export default function Home() {
               objectFit="contain"
             />
           </div>
-          <div tw="mt-4">
+          <div className="mt-4">
             <SubscribeForm />
           </div>
         </section>
       </main>
 
-      <footer tw="max-w-3xl flex items-center justify-center mt-6 mx-auto px-4 py-4">
-        <div tw="p-1">
+      <footer className="max-w-3xl flex items-center justify-center mt-6 mx-auto px-4 py-4">
+        <div className="p-1">
           <a
             href="https://www.instagram.com/neonheartcreative/"
             target="_blank"
           >
             <svg
-              tw="w-6 h-6"
+              className="w-6 h-6"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -194,10 +195,10 @@ export default function Home() {
             </svg>
           </a>
         </div>
-        <div tw="p-1">
+        <div className="p-1">
           <a href="mailto:neonheartcreative@gmail.com" target="_blank">
             <svg
-              tw="w-6 h-6"
+              className="w-6 h-6"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >

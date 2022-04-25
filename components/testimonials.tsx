@@ -1,4 +1,5 @@
 import * as React from 'react'
+import clsx from 'clsx'
 import { useKeenSlider } from 'keen-slider/react'
 import type {
   KeenSliderHooks,
@@ -6,10 +7,10 @@ import type {
   KeenSliderOptions,
   SliderInstance,
 } from 'keen-slider/react'
+
 import 'keen-slider/keen-slider.min.css'
 
 import { testimonials } from '../data/testimonials'
-import tw from 'twin.macro'
 
 function loopPlugin(
   slider: SliderInstance<
@@ -64,34 +65,32 @@ function Testimonials() {
   )
 
   return (
-    <section tw="bg-white py-12 px-4">
-      {/* <section tw="bg-neonheart-400 py-12 px-4"> */}
+    <section className="bg-white py-12 px-4">
+      {/* <section className="bg-neonheart-400 py-12 px-4"> */}
       <div
         ref={sliderRef}
-        className="keen-slider"
-        tw="max-w-2xl mx-auto bg-neonheart-400 rounded-lg shadow"
-        // tw="flex flex-col max-w-2xl mx-auto text-center bg-neonheart-400 rounded-lg shadow divide-y divide-gray-200"
+        className="keen-slider max-w-2xl mx-auto bg-neonheart-400 rounded-lg shadow"
+        // className="flex flex-col max-w-2xl mx-auto text-center bg-neonheart-400 rounded-lg shadow divide-y divide-gray-200"
       >
         {testimonials.map((testimonial) => {
           return (
             <div
               key={testimonial.id}
-              className="keen-slider__slide"
-              tw="flex-1 flex flex-col p-8"
+              className="keen-slider__slide flex-1 flex flex-col p-8"
             >
               <img
-                tw="w-32 h-32 flex-shrink-0 mx-auto rounded-full object-cover"
+                className="w-32 h-32 flex-shrink-0 mx-auto rounded-full object-cover"
                 src={`/assets/images/testimonials/${testimonial.image}`}
                 alt=""
               />
-              <p tw="mt-4">{testimonial.quote}</p>
-              <h3 tw="mt-6 text-gray-900 text-sm font-medium">
+              <p className="mt-4">{testimonial.quote}</p>
+              <h3 className="mt-6 text-gray-900 text-sm font-medium">
                 {testimonial.author}
               </h3>
               {testimonial.role ? (
-                <dl tw="mt-1 flex-grow flex flex-col justify-between">
-                  <dt tw="sr-only">Title</dt>
-                  <dd tw="text-gray-500 text-sm">{testimonial.role}</dd>
+                <dl className="mt-1 flex-grow flex flex-col justify-between">
+                  <dt className="sr-only">Title</dt>
+                  <dd className="text-gray-500 text-sm">{testimonial.role}</dd>
                 </dl>
               ) : null}
             </div>
@@ -100,7 +99,7 @@ function Testimonials() {
       </div>
 
       {isLoaded && instanceRef.current ? (
-        <div tw="flex justify-center py-3">
+        <div className="flex justify-center py-3">
           {Array.from(
             Array(instanceRef.current.track.details.slides.length).keys()
           ).map((idx) => {
@@ -110,10 +109,10 @@ function Testimonials() {
                 onClick={() => {
                   instanceRef.current?.moveToIdx(idx)
                 }}
-                css={[
-                  tw`w-3 h-3 my-0 mx-1 p-1 border-none rounded-full bg-gray-300 cursor-pointer`,
-                  currentSlide === idx && tw`bg-neonheart-900`,
-                ]}
+                className={clsx(
+                  'w-3 h-3 my-0 mx-1 p-1 border-none rounded-full bg-gray-300 cursor-pointer',
+                  currentSlide === idx && 'bg-neonheart-900'
+                )}
               ></button>
             )
           })}

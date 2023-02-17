@@ -60,7 +60,7 @@ export default function Home() {
           <dl className="mt-2">
             <dt className="font-alt font-bold">Intake</dt>
             <dd>
-              We begin with a 45-minute consultation. During this time, we will
+              We begin with a 30-minute consultation. During this time, we will
               define your design goals and review the design process. This time
               may include site visits or a virtual meeting.
             </dd>
@@ -81,7 +81,7 @@ export default function Home() {
             <dt className="font-alt font-bold mt-5">Project Close</dt>
             <dd>
               We will end your design with a tour of your final project. The
-              review will entail a 30 minutes walk-through to ensure that all
+              review will entail a 45 minutes walk-through to ensure that all
               items on your final punch list are complete and your vision has
               come to fruition. Once you sign off, you are ready to live and
               entertain in the house of your dreams!

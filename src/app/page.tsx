@@ -1,21 +1,11 @@
-import Head from 'next/head'
 import Image from "next/image"
 
 import { pricing } from '../data/pricing'
 import SubscribeForm from '../components/subscribe-form'
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
-      <Head>
-        <title>Neon Heart Creative</title>
-        <meta
-          name="description"
-          content="Neon Heart Creative is Jess Jones, an Atlanta based interior designer who specializes in design and decor for homes, office spaces, DIY projects, and events."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <header className="w-full py-4">
         <div className="relative h-20">
           <Image
@@ -27,7 +17,8 @@ export default function Home() {
           />
         </div>
       </header>
-      <main className="">
+
+      <main>
         <section
           className="max-w-3xl sm:flex sm:flex-row mt-6 mx-auto px-4 py-8"
           aria-label="About Neonheart Creative"

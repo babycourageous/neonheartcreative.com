@@ -1,8 +1,8 @@
 'use client'
 
 import * as React from 'react'
-import { useForm } from 'react-hook-form'
 import ky from 'ky-universal'
+import { useForm } from 'react-hook-form'
 
 type SubscribeState = {
   status: 'IDLE' | 'LOADING' | 'SUCCESS' | 'ERROR'
@@ -96,8 +96,8 @@ function SubscribeForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="shadow overflow-hidden sm:rounded-md">
-        <div className="px-4 py-5 bg-white sm:p-6">
+      <div className="overflow-hidden shadow sm:rounded-md">
+        <div className="bg-white px-4 py-5 sm:p-6">
           <div className="grid grid-cols-6 gap-6">
             <div className="col-span-6 sm:col-span-3">
               <label
@@ -112,7 +112,7 @@ function SubscribeForm() {
                 {...register('firstName')}
                 id="firstName"
                 autoComplete="given-name"
-                className="mt-1 focus:ring-yellow-400 focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-yellow-400 sm:text-sm"
               />
             </div>
 
@@ -129,7 +129,7 @@ function SubscribeForm() {
                 {...register('lastName')}
                 id="lastName"
                 autoComplete="family-name"
-                className="mt-1 focus:ring-yellow-400 focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-yellow-400 sm:text-sm"
               />
             </div>
 
@@ -146,15 +146,15 @@ function SubscribeForm() {
                 {...register('email')}
                 id="email"
                 autoComplete="email"
-                className="mt-1 focus:ring-yellow-400 focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-yellow-400 sm:text-sm"
               />
             </div>
           </div>
         </div>
-        <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
+        <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
           <button
             type="submit"
-            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-primary-dark bg-primary hover:bg-primary-dark hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+            className="inline-flex justify-center rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-primary-dark shadow-sm hover:bg-primary-dark hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
           >
             Submit
           </button>

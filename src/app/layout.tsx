@@ -1,6 +1,7 @@
 import './global.css'
 
 import { Open_Sans, Roboto } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -30,7 +31,10 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }

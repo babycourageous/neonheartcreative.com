@@ -8,6 +8,7 @@
     "start": "next start --port 3002"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.0.1",
     "blueimp-md5": "^2.19.0",
     "clsx": "^1.1.1",
     "keen-slider": "^6.6.8",

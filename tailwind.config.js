@@ -1,9 +1,13 @@
 module.exports = {
-  content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     fontFamily: {
-      sans: ['Open Sans', 'sans-serif'],
-      alt: ['Roboto', 'sans-serif'],
+      sans: ['var(--open-sans)', 'sans-serif'],
+      alt: ['var(--roboto)', 'sans-serif'],
     },
     extend: {
       colors: {

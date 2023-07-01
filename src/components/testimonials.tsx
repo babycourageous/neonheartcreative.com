@@ -1,6 +1,9 @@
+'use client'
+
 import * as React from 'react'
 import clsx from 'clsx'
 import { useKeenSlider } from 'keen-slider/react'
+
 import type {
   KeenSliderHooks,
   KeenSliderInstance,
@@ -69,28 +72,28 @@ function Testimonials() {
       {/* <section className="bg-neonheart-400 py-12 px-4"> */}
       <div
         ref={sliderRef}
-        className="keen-slider max-w-2xl mx-auto bg-neonheart-400 rounded-lg shadow"
+        className="keen-slider mx-auto max-w-2xl rounded-lg bg-neonheart-400 shadow"
         // className="flex flex-col max-w-2xl mx-auto text-center bg-neonheart-400 rounded-lg shadow divide-y divide-gray-200"
       >
         {testimonials.map((testimonial) => {
           return (
             <div
               key={testimonial.id}
-              className="keen-slider__slide flex-1 flex flex-col p-8"
+              className="keen-slider__slide flex flex-1 flex-col p-8"
             >
               <img
-                className="w-32 h-32 flex-shrink-0 mx-auto rounded-full object-cover"
+                className="mx-auto h-32 w-32 flex-shrink-0 rounded-full object-cover"
                 src={`/assets/images/testimonials/${testimonial.image}`}
                 alt=""
               />
               <p className="mt-4">{testimonial.quote}</p>
-              <h3 className="mt-6 text-gray-900 text-sm font-medium">
+              <h3 className="mt-6 text-sm font-medium text-gray-900">
                 {testimonial.author}
               </h3>
               {testimonial.role ? (
-                <dl className="mt-1 flex-grow flex flex-col justify-between">
+                <dl className="mt-1 flex flex-grow flex-col justify-between">
                   <dt className="sr-only">Title</dt>
-                  <dd className="text-gray-500 text-sm">{testimonial.role}</dd>
+                  <dd className="text-sm text-gray-500">{testimonial.role}</dd>
                 </dl>
               ) : null}
             </div>
@@ -110,7 +113,7 @@ function Testimonials() {
                   instanceRef.current?.moveToIdx(idx)
                 }}
                 className={clsx(
-                  'w-3 h-3 my-0 mx-1 p-1 border-none rounded-full bg-gray-300 cursor-pointer',
+                  'my-0 mx-1 h-3 w-3 cursor-pointer rounded-full border-none bg-gray-300 p-1',
                   currentSlide === idx && 'bg-neonheart-900'
                 )}
               ></button>

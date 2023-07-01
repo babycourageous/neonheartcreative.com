@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 3001",
     "build": "next build",
-    "start": "next start"
+    "start": "next start --port 3002"
   },
   "dependencies": {
     "blueimp-md5": "^2.19.0",
@@ -13,18 +13,26 @@
     "keen-slider": "^6.6.8",
     "ky": "^0.25.1",
     "ky-universal": "^0.8.2",
-    "next": "10.2.0",
+    "next": "^13.4.7",
     "ow": "^0.23.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-hook-form": "^7.29.0"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
     "@tailwindcss/forms": "^0.5.0",
     "@types/blueimp-md5": "^2.18.0",
-    "@types/react": "^17.0.5",
+    "@types/node": "^20.3.3",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
     "autoprefixer": "^10.4.4",
+    "eslint": "^8.44.0",
+    "eslint-config-next": "^13.4.7",
+    "eslint-config-prettier": "^8.8.0",
     "postcss": "^8.4.12",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "tailwindcss": "^3.0.24",
     "typescript": "^4.6.3"
   }

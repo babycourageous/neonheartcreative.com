@@ -1,5 +1,19 @@
 import './global.css'
 
+import { Open_Sans, Roboto } from 'next/font/google'
+
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--open-sans',
+})
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--roboto',
+})
+
 export const metadata = {
   title: 'Neon Heart Creative',
   description:
@@ -12,13 +26,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${openSans.variable} ${roboto.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@700&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body>{children}</body>
     </html>

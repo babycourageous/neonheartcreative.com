@@ -8,9 +8,11 @@
     "start": "next start --port 3002"
   },
   "dependencies": {
+    "@radix-ui/react-icons": "^1.3.0",
     "@vercel/analytics": "^1.0.1",
     "blueimp-md5": "^2.19.0",
-    "clsx": "^1.1.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^1.2.1",
     "keen-slider": "^6.6.8",
     "ky": "^0.25.1",
     "ky-universal": "^0.8.2",
@@ -18,7 +20,9 @@
     "ow": "^0.23.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.29.0"
+    "react-hook-form": "^7.29.0",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.0.2",

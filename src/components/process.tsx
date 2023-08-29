@@ -1,9 +1,8 @@
+import { Section } from './ui/section'
+
 function Process() {
   return (
-    <section
-      className="mx-auto mt-6 max-w-3xl px-4 py-8"
-      aria-labelledby="process-heading"
-    >
+    <Section aria-labelledby="process-heading">
       <h2 id="process-heading" className="text-3xl font-extralight">
         The Process
       </h2>
@@ -37,7 +36,7 @@ function Process() {
           your dreams!
         </dd>
       </dl>
-    </section>
+    </Section>
   )
 }
 

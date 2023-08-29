@@ -1,12 +1,11 @@
 import * as React from 'react'
 import { pricing } from '@/data/pricing'
 
+import { Section } from './ui/section'
+
 function Pricing() {
   return (
-    <section
-      className="mx-auto mt-6 max-w-3xl px-4 py-8"
-      aria-labelledby="pricing-heading"
-    >
+    <Section aria-labelledby="pricing-heading">
       <h2 id="pricing-heading" className="text-3xl font-extralight">
         The Pricing
       </h2>
@@ -27,7 +26,7 @@ function Pricing() {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   )
 }
 

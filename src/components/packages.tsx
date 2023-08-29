@@ -1,11 +1,10 @@
 import * as React from 'react'
 
+import { Section } from './ui/section'
+
 function Packages() {
   return (
-    <section
-      className="mx-auto mt-6 max-w-3xl px-4 py-8"
-      aria-labelledby="event-heading"
-    >
+    <Section aria-labelledby="event-heading">
       <h2 id="event-heading" className="text-3xl font-extralight">
         Event Planning Packages
       </h2>
@@ -43,7 +42,7 @@ function Packages() {
           <div className="ml-6">$1000</div>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

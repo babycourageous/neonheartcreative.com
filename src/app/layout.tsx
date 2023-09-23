@@ -3,6 +3,7 @@ import './globals.css'
 import { Open_Sans, Roboto } from 'next/font/google'
 import Image from 'next/image'
 import { Analytics } from '@vercel/analytics/react'
+import { Toaster } from 'react-hot-toast'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -79,6 +80,7 @@ export default function RootLayout({
             </a>
           </div>
         </footer>
+        <Toaster />
         <Analytics />
       </body>
     </html>

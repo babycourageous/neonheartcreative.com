@@ -1,7 +1,9 @@
 import * as React from 'react'
 import Image from 'next/image'
 
+import { subscribe } from '@/app/actions/subscribe'
 import SubscribeForm from './subscribe-form'
+import { Card, CardContent, CardHeader } from './ui/card'
 import { Section } from './ui/section'
 
 function Newsletter() {
@@ -17,7 +19,12 @@ function Newsletter() {
         />
       </div>
       <div className="mt-4">
-        <SubscribeForm />
+        <Card>
+          <CardHeader />
+          <CardContent>
+            <SubscribeForm onSubmit={subscribe} />
+          </CardContent>
+        </Card>
       </div>
     </Section>
   )

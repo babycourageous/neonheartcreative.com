@@ -20,8 +20,6 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "keen-slider": "^6.6.8",
-    "ky": "^0.25.1",
-    "ky-universal": "^0.8.2",
     "next": "^13.4.16",
     "next-safe-action": "^3.0.1",
     "ow": "^0.23.0",

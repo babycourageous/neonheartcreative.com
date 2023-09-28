@@ -38,7 +38,13 @@ export default function HomePage() {
             </p>
           </div>
           <div className="mt-4 flex w-full items-center justify-center sm:mt-0">
-            <img src="/assets/images/hello-there.png" alt="" />
+            <Image
+              src="/assets/images/hello-there.png"
+              alt=""
+              fill
+              sizes="100vw"
+              className="object-cover"
+            />
           </div>
         </section>
 

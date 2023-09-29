@@ -37,8 +37,14 @@ export default function HomePage() {
               found the heart of your home.`}
             </p>
           </div>
-          <div className="mt-4 flex w-full items-center justify-center sm:mt-0">
-            <img src="/assets/images/hello-there.png" alt="" />
+          <div className="relative mt-4 flex w-full items-center justify-center sm:mt-0">
+            <Image
+              src="/assets/images/hello-there.png"
+              alt=""
+              fill
+              sizes="100vw"
+              className="object-cover"
+            />
           </div>
         </section>
 

@@ -1,6 +1,7 @@
 'use client'
 
 import * as React from 'react'
+import Image from 'next/image'
 import clsx from 'clsx'
 import { useKeenSlider } from 'keen-slider/react'
 
@@ -68,7 +69,7 @@ function Testimonials() {
   )
 
   return (
-    <section className="bg-white py-12 px-4">
+    <section className="bg-white px-4 py-12">
       {/* <section className="bg-neonheart-400 py-12 px-4"> */}
       <div
         ref={sliderRef}
@@ -81,7 +82,7 @@ function Testimonials() {
               key={testimonial.id}
               className="keen-slider__slide flex flex-1 flex-col p-8"
             >
-              <img
+              <Image
                 className="mx-auto h-32 w-32 flex-shrink-0 rounded-full object-cover"
                 src={`/assets/images/testimonials/${testimonial.image}`}
                 alt=""
@@ -113,7 +114,7 @@ function Testimonials() {
                   instanceRef.current?.moveToIdx(idx)
                 }}
                 className={clsx(
-                  'my-0 mx-1 h-3 w-3 cursor-pointer rounded-full border-none bg-gray-300 p-1',
+                  'mx-1 my-0 h-3 w-3 cursor-pointer rounded-full border-none bg-gray-300 p-1',
                   currentSlide === idx && 'bg-neonheart-900'
                 )}
               ></button>

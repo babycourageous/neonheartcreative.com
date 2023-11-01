@@ -8,6 +8,7 @@ module.exports = {
     '^(next/(.*)$)|^(next$)',
     '<THIRD_PARTY_MODULES>',
     '',
+    '^@/resources/(.*)$',
     '^@/config/(.*)$',
     '^@/lib/(.*)$',
     '^@/hooks/(.*)$',

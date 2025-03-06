@@ -20,13 +20,7 @@ export const pricing = [
     label: '1 room design',
     description:
       'Including digital mood board, spreadsheets of articles recommended',
-    price: '$650',
-  },
-  {
-    label: 'Kitchen design',
-    description:
-      'Including digital mood board, spreadsheets of articles recommended',
-    price: '$1000-2500',
+    price: '$1000',
   },
   {
     label: 'Hourly rate',
@@ -36,12 +30,12 @@ export const pricing = [
   {
     label: 'Freelance Day Rate',
     description: '8 hours shopping/assembly/styling for Clients',
-    price: '$550',
+    price: '$650',
   },
   {
     label: 'New Home Overview',
     description:
       'Consultation and detailed spreadsheet on everything you need for your new home to be move-in ready. Includes paint colors, light fixtures, hardware, and suggestions on updates you could make.',
-    price: '$600',
+    price: '$700',
   },
 ]

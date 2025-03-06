@@ -10,7 +10,7 @@ function About() {
         <div>
           <p className="text-3xl font-extralight">{`Hi! I'm Jess.`}</p>
           <p>
-            {`I'm an interior designer based in Atlanta, GA. I tackle everything
+            {`I'm an interior stylist based in Atlanta, GA. I tackle everything
                 from office spaces to home decor to DIY house projects to special
                 events.`}
           </p>

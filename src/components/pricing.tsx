@@ -17,7 +17,7 @@ function Pricing() {
             className="flex justify-between py-1 pl-1 pr-2 odd:bg-gray-100"
           >
             <div>
-              <div className="font-alt text-sm font-bold text-gray-900">
+              <div className="font-alt text-lg font-bold text-gray-900">
                 {item.label}
               </div>
               <div className="text-sm text-gray-500">{item.description}</div>
@@ -25,6 +25,34 @@ function Pricing() {
             <div className="ml-6">{item.price}</div>
           </div>
         ))}
+        <div className="flex justify-between py-1 pl-1 pr-2 odd:bg-gray-100">
+          <div>
+            <div className="font-alt text-lg font-bold text-gray-900">
+              Neon Heart Creative Retainer
+            </div>
+            <div className="space-y-2 text-sm text-gray-500">
+              <p>
+                Seamlessly servicing event & project needs that have a longer
+                lifespan. Each month, clients will be able pay a flat fee to
+                retain access to my creative services for the remainder of the
+                year.
+              </p>
+              <p>This includes (but is not limited to):</p>
+
+              <ul className="list-disc pl-4">
+                <li>Styling & decor advisory</li>
+                <li>Home decor shopping</li>
+                <li>Holiday decorating</li>
+                <li>Party planning</li>
+              </ul>
+              <p className="">
+                Prices Starting at{' '}
+                <span className="font-semibold text-gray-900">$300</span> a
+                month
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </Section>
   )

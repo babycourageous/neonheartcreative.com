@@ -33,9 +33,9 @@ function Pricing() {
             <div className="space-y-2 text-sm text-gray-500">
               <p>
                 Seamlessly servicing event & project needs that have a longer
-                lifespan. Each month, clients will be able pay a flat fee to
-                retain access to my creative services for the remainder of the
-                year.
+                lifespan. Each month, clients will pay a flat fee to retain
+                access to my creative services for the remainder of the year.{' '}
+                <span className="font-semibold">*1 year minimum*</span>
               </p>
               <p>This includes (but is not limited to):</p>
 

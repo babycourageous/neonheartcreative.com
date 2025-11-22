@@ -73,8 +73,8 @@ function Testimonials() {
       {/* <section className="bg-neonheart-400 py-12 px-4"> */}
       <div
         ref={sliderRef}
-        className="keen-slider mx-auto max-w-2xl rounded-lg bg-neonheart-400 shadow"
-        // className="flex flex-col max-w-2xl mx-auto text-center bg-neonheart-400 rounded-lg shadow divide-y divide-gray-200"
+        className="keen-slider mx-auto max-w-2xl rounded-lg bg-neonheart-400 shadow-sm"
+        // className="flex flex-col max-w-2xl mx-auto text-center bg-neonheart-400 rounded-lg shadow-sm divide-y divide-gray-200"
       >
         {testimonials.map((testimonial) => {
           return (
@@ -83,7 +83,7 @@ function Testimonials() {
               className="keen-slider__slide flex flex-1 flex-col p-8"
             >
               <Image
-                className="mx-auto h-32 w-32 flex-shrink-0 rounded-full object-cover"
+                className="mx-auto h-32 w-32 shrink-0 rounded-full object-cover"
                 src={`/assets/images/testimonials/${testimonial.image}`}
                 alt=""
               />
@@ -92,7 +92,7 @@ function Testimonials() {
                 {testimonial.author}
               </h3>
               {testimonial.role ? (
-                <dl className="mt-1 flex flex-grow flex-col justify-between">
+                <dl className="mt-1 flex grow flex-col justify-between">
                   <dt className="sr-only">Title</dt>
                   <dd className="text-sm text-gray-500">{testimonial.role}</dd>
                 </dl>

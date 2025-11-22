@@ -110,7 +110,7 @@ function SubscribeForm({ onSubmit }: Props) {
             id="firstName"
             name="firstName"
             autoComplete="given-name"
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-yellow-400 sm:text-sm"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-primary focus:ring-yellow-400 sm:text-sm"
           />
         </div>
         <div className="col-span-6 sm:col-span-3">
@@ -126,7 +126,7 @@ function SubscribeForm({ onSubmit }: Props) {
             id="lastName"
             name="lastName"
             autoComplete="family-name"
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-yellow-400 sm:text-sm"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-primary focus:ring-yellow-400 sm:text-sm"
           />
         </div>
         <div className="col-span-6">
@@ -142,13 +142,13 @@ function SubscribeForm({ onSubmit }: Props) {
             id="email"
             name="email"
             autoComplete="email"
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-yellow-400 sm:text-sm"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-primary focus:ring-yellow-400 sm:text-sm"
           />
         </div>
       </div>
       <button
         type="submit"
-        className="inline-flex justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-sm font-medium text-primary-dark shadow-sm hover:bg-primary-dark hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
+        className="inline-flex justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-sm font-medium text-primary-dark shadow-xs hover:bg-primary-dark hover:text-white focus:outline-hidden focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
       >
         Submit
       </button>
